@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "MYImage"
+    imagename = "myimage"
     registryCredential = 'suribabu-dockerhub'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/Strvsuri/docker-jenkins.git', branch: 'master', credentialsId: 'strvsuri-bd53ffe1-2fb5-4a9c-b05c-96ba213664c3'])
+        git([url: 'https://github.com/Strvsuri/docker-jenkins.git', branch: 'master', credentialsId: 'strvsuri-325401_c'])
 
       }
     }
